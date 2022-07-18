@@ -18,9 +18,7 @@ public class CoverageLogIn {
         driver.findElement(By.xpath("//android.widget.EditText[@bounds='[80,554][640,631]']")).click();
         driver.findElement(By.xpath("//android.widget.EditText[@bounds='[80,554][640,631]']")).sendKeys("test123!");
         driver.findElement(By.xpath("//android.view.ViewGroup[@bounds='[80,709][120,749]']")).click();
-        driver.findElement(By.xpath("//android.view.ViewGroup[@bounds='[80,804][640,904]']")).click();
-        
+       
     }
-
-    }
+ }
 
