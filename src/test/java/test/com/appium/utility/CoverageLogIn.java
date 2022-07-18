@@ -11,18 +11,15 @@ public class CoverageLogIn {
 
     public static void logIn (AppiumDriver<WebElement> driver, WebDriverWait wait, WaitAnd waitAnd) throws InterruptedException {
 
-        Thread.sleep(1000);
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("com.android.contacts:id/add_account_button")));
         driver.findElement(By.id("com.android.contacts:id/add_account_button")).click();
-        Thread.sleep(1000);
         waitAnd.click(WidgetPath.INSTANCE.getUserNameField());
-        driver.findElement(By.xpath("//android.widget.EditText[@bounds='[80,414][640,490]']")).sendKeys("perica.stjepanovic@acumenics.com");
+        driver.findElement(By.xpath("//android.widget.EditText[@bounds='[80,414][640,490]']")).sendKeys("test@yopmail.com");
         driver.findElement(By.xpath("//android.widget.EditText[@bounds='[80,554][640,631]']")).click();
-        driver.findElement(By.xpath("//android.widget.EditText[@bounds='[80,554][640,631]']")).sendKeys("qwerty66");
+        driver.findElement(By.xpath("//android.widget.EditText[@bounds='[80,554][640,631]']")).sendKeys("test123!");
         driver.findElement(By.xpath("//android.view.ViewGroup[@bounds='[80,709][120,749]']")).click();
         driver.findElement(By.xpath("//android.view.ViewGroup[@bounds='[80,804][640,904]']")).click();
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//android.widget.TextView[@bounds='[60,194][509,235]']")));
-
+        
     }
 
     }
